@@ -1,0 +1,62 @@
+body {
+    /* background-color: #006400;
+    background-image: radial-gradient(circle, #2e8b57 0%, #006400 50%, #004d00 100%); */
+    background-color: #ff0000;
+    background-image: radial-gradient(circle, #ff0000 0%, #990000 50%, #660000 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.marcador {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #212529;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 4px 4px rgba(255, 255, 255, 0.74);
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.marcador h2 {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.carta {
+    position: relative;
+    width: 150px;
+    left: 100px;
+    border-radius: 15px;
+    margin-left: -75px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.carta:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+    transform: scale(1.05);
+}
+
+.botonesJugador{
+    display: none;
+}
+
+#botonCrearPartida,
+.botonesJugador button {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#botonCrearPartida:hover,
+.botonesJugador button:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+    transform: scale(1.05);
+}
